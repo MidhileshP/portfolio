@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Midhilesh Polisetty — Full-Stack Developer</title>
+  <meta name="description" content="Full-stack developer in Hyderabad building Node.js microservices, message queues and map streaming for an enterprise satellite imagery ordering platform.">
+  <meta name="theme-color" content="#05080c">
+  <meta property="og:title" content="Midhilesh Polisetty — Full-Stack Developer">
+  <meta property="og:description" content="Node.js microservices, queues and map streaming for an enterprise satellite imagery ordering platform.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Sans:wght@400..700&family=JetBrains+Mono:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    // Set before first paint: marks JS as available and restores the saved theme.
+    document.documentElement.classList.add('js');
+    try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Midhilesh Polisetty, back to top">
+      <span class="brand-mark">MP</span>
+      <span class="brand-text">Midhilesh Polisetty</span>
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#stack">Stack</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-tools">
+      <button class="term-btn" id="open-term" type="button" aria-haspopup="dialog" aria-controls="terminal">
+        <span class="term-btn-prompt" aria-hidden="true">&gt;_</span>
+        <span class="term-btn-label">Terminal</span>
+        <kbd aria-hidden="true">/</kbd>
+      </button>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch between dark and light theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.2A8 8 0 0 1 9.8 4a8 8 0 1 0 10.2 10.2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ───────────── Hero ───────────── -->
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="hud-line"><span class="pulse" aria-hidden="true"></span>Hyderabad, India <span class="sep">/</span> 17.39°N 78.49°E <span class="sep">/</span> <span id="ist-clock">--:--:--</span> IST</p>
+        <h1>
+          <span class="line"><span>Midhilesh</span></span>
+          <span class="line outline"><span>Polisetty</span></span>
+        </h1>
+        <p class="lede">Full-stack developer. I build the APIs, queues and map streams behind an enterprise <em>satellite imagery</em> ordering platform.</p>
+        <div class="cta">
+          <a class="btn primary" href="#work">Follow an order <span aria-hidden="true">→</span></a>
+          <a class="btn" href="assets/Midhilesh-Polisetty-Resume.pdf" download>Download résumé</a>
+        </div>
+      </div>
+
+      <div class="hero-globe">
+        <canvas id="globe" role="img" aria-label="A rotating dotted globe with satellites in orbit and a marker on Hyderabad. Drag to rotate it, click to drop a simulated capture."></canvas>
+      </div>
+      <div class="globe-hud" aria-hidden="true">
+        <ol class="task-log" id="task-log"></ol>
+        <p class="globe-hint">Drag to rotate <span class="sep">·</span> click to task a capture</p>
+      </div>
+
+      <dl class="stats">
+        <div><dt>Node.js microservices</dt><dd data-count="7">7</dd></div>
+        <div><dt>Imagery provider APIs</dt><dd data-count="10" data-suffix="+">10+</dd></div>
+        <div><dt>Cloud certifications</dt><dd data-count="3">3</dd></div>
+        <div><dt>CGPA, B.Tech CSE (IoT)</dt><dd data-count="9.23" data-decimals="2">9.23</dd></div>
+      </dl>
+    </section>
+
+    <!-- ───────────── Work ───────────── -->
+    <section class="section" id="work">
+      <header class="section-head" data-reveal>
+        <p class="eyebrow">01 <span>Work</span></p>
+        <h2>From sign-up to pixels on a map.</h2>
+        <p class="section-lede">Since April 2025 I've been an Associate Software Developer (Full Stack) at <strong>Minfy Technologies</strong> in Hyderabad, working on an enterprise satellite imagery ordering platform. Follow one order through the parts I built.</p>
+      </header>
+
+      <div class="pipeline" id="pipeline" data-reveal>
+        <div class="pipe-top">
+          <p class="pipe-label">Minfy Technologies <span class="sep">/</span> Apr 2025 – Present</p>
+          <button class="ghost-btn" id="pipe-auto" type="button" aria-pressed="true">Auto-advance: on</button>
+        </div>
+
+        <div class="pipe-track" role="tablist" aria-label="Stages of an imagery order">
+          <span class="pipe-fill" aria-hidden="true"></span>
+          <span class="pipe-packet" aria-hidden="true"></span>
+          <button class="pipe-node" role="tab" id="pipe-tab-0" aria-controls="pipe-panel-0" aria-selected="true" type="button"><span class="pipe-dot">01</span><span class="pipe-name">Onboard</span></button>
+          <button class="pipe-node" role="tab" id="pipe-tab-1" aria-controls="pipe-panel-1" aria-selected="false" tabindex="-1" type="button"><span class="pipe-dot">02</span><span class="pipe-name">Search &amp; task</span></button>
+          <button class="pipe-node" role="tab" id="pipe-tab-2" aria-controls="pipe-panel-2" aria-selected="false" tabindex="-1" type="button"><span class="pipe-dot">03</span><span class="pipe-name">Route</span></button>
+          <button class="pipe-node" role="tab" id="pipe-tab-3" aria-controls="pipe-panel-3" aria-selected="false" tabindex="-1" type="button"><span class="pipe-dot">04</span><span class="pipe-name">Process</span></button>
+          <button class="pipe-node" role="tab" id="pipe-tab-4" aria-controls="pipe-panel-4" aria-selected="false" tabindex="-1" type="button"><span class="pipe-dot">05</span><span class="pipe-name">Catalogue</span></button>
+          <button class="pipe-node" role="tab" id="pipe-tab-5" aria-controls="pipe-panel-5" aria-selected="false" tabindex="-1" type="button"><span class="pipe-dot">06</span><span class="pipe-name">View</span></button>
+        </div>
+
+        <div class="pipe-panels">
+          <article class="pipe-panel is-active" role="tabpanel" id="pipe-panel-0" aria-labelledby="pipe-tab-0">
+            <span class="pipe-num" aria-hidden="true">01</span>
+            <div>
+              <h3>KYC checks and organisation limits</h3>
+              <p>Integrated a third-party KYC verification API (Aadhaar, PAN, GSTIN) into user onboarding with automatic approval, and enforced per-organisation seat and order limits.</p>
+              <ul class="chips"><li>KYC API</li><li>Aadhaar · PAN · GSTIN</li><li>Auto-approval</li><li>Seat &amp; order limits</li></ul>
+            </div>
+          </article>
+          <article class="pipe-panel" role="tabpanel" id="pipe-panel-1" aria-labelledby="pipe-tab-1">
+            <span class="pipe-num" aria-hidden="true">02</span>
+            <div>
+              <h3>10+ imagery providers behind one API</h3>
+              <p>Integrated 10+ optical and SAR satellite imagery provider APIs for archive search, tasking orders, feasibility checks and order delivery via STAC, SFTP and AWS S3.</p>
+              <ul class="chips"><li>Optical</li><li>SAR</li><li>Archive search</li><li>Tasking</li><li>STAC</li><li>SFTP</li><li>AWS S3</li></ul>
+            </div>
+          </article>
+          <article class="pipe-panel" role="tabpanel" id="pipe-panel-2" aria-labelledby="pipe-tab-2">
+            <span class="pipe-num" aria-hidden="true">03</span>
+            <div>
+              <h3>Seven microservices, joined by queues</h3>
+              <p>Built and maintained REST APIs across 7 Node.js microservices (Express, Fastify, TypeScript, MySQL, Prisma), connected through RabbitMQ queues with dead-letter handling.</p>
+              <ul class="chips"><li>Node.js</li><li>TypeScript</li><li>Express</li><li>Fastify</li><li>MySQL</li><li>Prisma</li><li>RabbitMQ</li><li>Dead-letter queues</li></ul>
+            </div>
+          </article>
+          <article class="pipe-panel" role="tabpanel" id="pipe-panel-3" aria-labelledby="pipe-tab-3">
+            <span class="pipe-num" aria-hidden="true">04</span>
+            <div>
+              <h3>Background jobs, config and releases</h3>
+              <p>Ran background jobs with BullMQ and Redis, managed configuration through AWS SSM, and shipped releases across dev, staging and production with ongoing production support.</p>
+              <ul class="chips"><li>BullMQ</li><li>Redis</li><li>AWS SSM</li><li>dev → staging → prod</li><li>Production support</li></ul>
+            </div>
+          </article>
+          <article class="pipe-panel" role="tabpanel" id="pipe-panel-4" aria-labelledby="pipe-tab-4">
+            <span class="pipe-num" aria-hidden="true">05</span>
+            <div>
+              <h3>A STAC catalogue that streams imagery</h3>
+              <p>Built a STAC imagery catalogue (pgSTAC on PostgreSQL) and Cloud-Optimized GeoTIFF streaming with TiTiler, letting customers preview delivered imagery on an interactive map.</p>
+              <ul class="chips"><li>pgSTAC</li><li>PostgreSQL</li><li>Cloud-Optimized GeoTIFF</li><li>TiTiler</li></ul>
+            </div>
+          </article>
+          <article class="pipe-panel" role="tabpanel" id="pipe-panel-5" aria-labelledby="pipe-tab-5">
+            <span class="pipe-num" aria-hidden="true">06</span>
+            <div>
+              <h3>React front end and an ArcGIS Pro add-in</h3>
+              <p>Developed React.js features (map streaming, order details, admin panels) and added single sign-on to a companion ArcGIS Pro add-in (C#/.NET).</p>
+              <ul class="chips"><li>React.js</li><li>Map streaming</li><li>Admin panels</li><li>Single sign-on</li><li>C# / .NET</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <article class="xp-card" data-reveal>
+        <p class="xp-when">Jun – Aug 2024 <span class="sep">/</span> Remote</p>
+        <div>
+          <h3>Bolt IoT <span>Intern, IoT &amp; Python</span></h3>
+          <p>Wrote Python programs for hardware control, device communication and real-time automation using cloud services and third-party integrations.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- ───────────── Projects ───────────── -->
+    <section class="section" id="projects">
+      <header class="section-head" data-reveal>
+        <p class="eyebrow">02 <span>Projects</span></p>
+        <h2>Three builds. Each one comes with a toy.</h2>
+        <p class="section-lede">Reading about a project is dull, so every one here has a small working demo of the idea behind it. The toys were written for this page; the real apps are linked.</p>
+      </header>
+
+      <article class="project" id="p-docspace" data-reveal>
+        <div class="project-copy">
+          <p class="project-kicker">Real-time collaborative editor</p>
+          <h3>DocSpace</h3>
+          <p class="project-desc">A collaborative document editor with real-time synchronisation using Yjs (CRDTs) and Firebase authentication, plus AI writing assistance, the BlockNote editor, and threaded comments with @mentions.</p>
+          <ul class="chips"><li>React.js</li><li>Node.js</li><li>Express.js</li><li>Firebase</li><li>Yjs</li></ul>
+          <a class="text-link" href="https://docspace-frontend.onrender.com/" target="_blank" rel="noopener">Live demo <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="toy">
+          <div class="toy-bar">
+            <p class="toy-title"><span>Toy</span> Two replicas, one document</p>
+            <div class="toy-actions">
+              <button class="ghost-btn" id="crdt-link" type="button" aria-pressed="false">Go offline</button>
+              <button class="ghost-btn accent" id="crdt-demo" type="button">Simulate a conflict</button>
+            </div>
+          </div>
+          <div class="crdt">
+            <label class="peer peer-a"><span class="peer-name">Peer A</span><textarea id="crdt-a" rows="5" spellcheck="false" autocomplete="off"></textarea></label>
+            <div class="wire" id="crdt-wire" aria-hidden="true"><span class="wire-line"></span><span class="wire-q" id="crdt-q"></span></div>
+            <label class="peer peer-b"><span class="peer-name">Peer B</span><textarea id="crdt-b" rows="5" spellcheck="false" autocomplete="off"></textarea></label>
+          </div>
+          <p class="toy-status" id="crdt-status" role="status">Replicas in sync</p>
+          <p class="toy-note">Type in either box, or go offline, edit both and reconnect. This is a small sequence CRDT written for this page, not Yjs, but the idea is the same: every character carries a unique ID, so both sides merge edits into the same order.</p>
+        </div>
+      </article>
+
+      <article class="project flip" id="p-image" data-reveal>
+        <div class="project-copy">
+          <p class="project-kicker">Online image editor</p>
+          <h3>Image Editing Web App</h3>
+          <p class="project-desc">An online image editor with multiple filters and enhancement features, built in Python and deployed with Streamlit.</p>
+          <ul class="chips"><li>Python</li><li>Streamlit</li></ul>
+          <a class="text-link" href="https://image-process.streamlit.app/" target="_blank" rel="noopener">Live demo <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="toy">
+          <div class="toy-bar">
+            <p class="toy-title"><span>Toy</span> Filter bench</p>
+            <div class="toy-actions">
+              <button class="ghost-btn" id="img-new" type="button">New terrain</button>
+              <label class="ghost-btn file-btn">Use your image<input id="img-file" type="file" accept="image/*"></label>
+            </div>
+          </div>
+          <div class="imgtoy">
+            <div class="img-frame"><canvas id="img-canvas" width="560" height="360" role="img" aria-label="Procedurally generated terrain, shown with the filters you choose"></canvas></div>
+            <div class="img-controls">
+              <div class="presets" role="group" aria-label="Filter presets">
+                <button type="button" data-preset="original" aria-pressed="true">Original</button>
+                <button type="button" data-preset="mono" aria-pressed="false">Mono</button>
+                <button type="button" data-preset="false-colour" aria-pressed="false">False colour</button>
+                <button type="button" data-preset="haze" aria-pressed="false">Haze</button>
+              </div>
+              <label class="slider"><span>Brightness</span><input type="range" data-filter="brightness" min="40" max="170" value="100"><output>100%</output></label>
+              <label class="slider"><span>Contrast</span><input type="range" data-filter="contrast" min="40" max="190" value="100"><output>100%</output></label>
+              <label class="slider"><span>Saturation</span><input type="range" data-filter="saturate" min="0" max="250" value="100"><output>100%</output></label>
+              <label class="slider"><span>Hue</span><input type="range" data-filter="hue" min="0" max="360" value="0"><output>0°</output></label>
+              <label class="slider"><span>Blur</span><input type="range" data-filter="blur" min="0" max="8" step="0.5" value="0"><output>0px</output></label>
+            </div>
+          </div>
+          <p class="toy-note">The terrain is generated in your browser from layered noise, a nod to the day job. Your own image never leaves your device.</p>
+        </div>
+      </article>
+
+      <article class="project" id="p-meme" data-reveal>
+        <div class="project-copy">
+          <p class="project-kicker">Meme-sharing platform</p>
+          <h3>Meme Uploader</h3>
+          <p class="project-desc">A meme-sharing platform with authentication, image uploads and personalised feeds, using ImageKit storage and content moderation for secure content management.</p>
+          <ul class="chips"><li>React.js</li><li>Node.js</li><li>Express.js</li><li>MongoDB</li><li>ImageKit</li></ul>
+        </div>
+        <div class="toy">
+          <div class="toy-bar">
+            <p class="toy-title"><span>Toy</span> Meme press</p>
+            <div class="toy-actions">
+              <button class="ghost-btn" id="meme-next" type="button">Next template</button>
+              <label class="ghost-btn file-btn">Use your image<input id="meme-file" type="file" accept="image/*"></label>
+              <button class="ghost-btn accent" id="meme-save" type="button">Download PNG</button>
+            </div>
+          </div>
+          <div class="memetoy">
+            <canvas id="meme-canvas" width="560" height="380" role="img" aria-label="Meme preview with your captions"></canvas>
+            <div class="meme-fields">
+              <label><span>Top text</span><input id="meme-top" type="text" maxlength="60" value="It works on my machine"></label>
+              <label><span>Bottom text</span><input id="meme-bottom" type="text" maxlength="60" value="Then we ship your machine"></label>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ───────────── Stack ───────────── -->
+    <section class="section" id="stack">
+      <header class="section-head" data-reveal>
+        <p class="eyebrow">03 <span>Stack</span></p>
+        <h2>What I reach for, and where I used it.</h2>
+        <p class="section-lede">Pick a job or project to light up the tools behind it, or hover a tool to see where it shows up.</p>
+      </header>
+
+      <div class="stack" data-reveal>
+        <div class="stack-filter" role="group" aria-label="Light up skills by where they were used">
+          <button type="button" data-filter="all" aria-pressed="true">Everything</button>
+          <button type="button" data-filter="minfy" aria-pressed="false">Minfy Technologies</button>
+          <button type="button" data-filter="docspace" aria-pressed="false">DocSpace</button>
+          <button type="button" data-filter="meme" aria-pressed="false">Meme Uploader</button>
+          <button type="button" data-filter="image" aria-pressed="false">Image Editing Web App</button>
+          <button type="button" data-filter="bolt" aria-pressed="false">Bolt IoT</button>
+        </div>
+        <p class="stack-info" id="stack-info" role="status">Showing all 32 tools.</p>
+
+        <div class="stack-grid">
+          <section class="stack-group">
+            <h3>Languages</h3>
+            <ul>
+              <li><button type="button" class="skill" data-skill>JavaScript</button></li>
+              <li><button type="button" class="skill" data-skill data-used="minfy">TypeScript</button></li>
+              <li><button type="button" class="skill" data-skill data-used="image bolt">Python</button></li>
+              <li><button type="button" class="skill" data-skill data-used="minfy">C#</button></li>
+            </ul>
+          </section>
+          <section class="stack-group">
+            <h3>Backend</h3>
+            <ul>
+              <li><button type="button" class="skill" data-skill data-used="minfy docspace meme">Node.js</button></li>
+              <li><button type="button" class="skill" data-skill data-used="minfy docspace meme">Express.js</button></li>
+              <li><button type="button" class="skill" data-skill data-used="minfy">Fastify</button></li>
+              <li><button type="button" class="skill" data-skill data-used="minfy">REST APIs</button></li>
+              <li><button type="button" class="skill" data-skill data-used="minfy">Microservices</button></li>
+              <li><button type="button" class="skill" data-skill data-used="minfy">RabbitMQ</button></li>
+              <li><button type="button" class="skill" data-skill data-used="minfy">BullMQ</button></li>
+              <li><button type="button" class="skill" data-skill>Socket.IO</button></li>
+            </ul>
+          </section>
+          <section class="stack-group">
+            <h3>Frontend</h3>
+            <ul>
+              <li><button type="button" class="skill" data-skill data-used="minfy docspace meme">React.js</button></li>
+              <li><button type="button" class="skill" data-skill>HTML</button></li>
+              <li><button type="button" class="skill" data-skill>CSS</button></li>
+            </ul>
+          </section>
+          <section class="stack-group">
+            <h3>Databases</h3>
+            <ul>
+              <li><button type="button" class="skill" data-skill data-used="minfy">MySQL</button></li>
+              <li><button type="button" class="skill" data-skill data-used="minfy">PostgreSQL</button></li>
+              <li><button type="button" class="skill" data-skill data-used="meme">MongoDB</button></li>
+              <li><button type="button" class="skill" data-skill data-used="minfy">Redis</button></li>
+              <li><button type="button" class="skill" data-skill data-used="minfy">Prisma ORM</button></li>
+              <li><button type="button" class="skill" data-skill data-used="docspace">Firebase</button></li>
+            </ul>
+          </section>
+          <section class="stack-group">
+            <h3>Cloud &amp; tools</h3>
+            <ul>
+              <li><button type="button" class="skill" data-skill data-used="minfy">AWS S3</button></li>
+              <li><button type="button" class="skill" data-skill>AWS EC2</button></li>
+              <li><button type="button" class="skill" data-skill>AWS SES</button></li>
+              <li><button type="button" class="skill" data-skill data-used="minfy">AWS SSM</button></li>
+              <li><button type="button" class="skill" data-skill>Git / GitHub</button></li>
+              <li><button type="button" class="skill" data-skill>Postman</button></li>
+              <li><button type="button" class="skill" data-skill>Swagger / OpenAPI</button></li>
+              <li><button type="button" class="skill" data-skill>PM2</button></li>
+            </ul>
+          </section>
+          <section class="stack-group">
+            <h3>Data</h3>
+            <ul>
+              <li><button type="button" class="skill" data-skill>NumPy</button></li>
+              <li><button type="button" class="skill" data-skill>Pandas</button></li>
+              <li><button type="button" class="skill" data-skill>Matplotlib</button></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── Credentials ───────────── -->
+    <section class="section" id="credentials">
+      <header class="section-head" data-reveal>
+        <p class="eyebrow">04 <span>Credentials</span></p>
+        <h2>The paperwork.</h2>
+      </header>
+
+      <div class="creds">
+        <article class="edu" data-reveal>
+          <div class="edu-ring" role="img" aria-label="CGPA 9.23 out of 10">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <circle class="ring-bg" cx="60" cy="60" r="52"/>
+              <circle class="ring-fg" cx="60" cy="60" r="52" pathLength="100" stroke-dasharray="92.3 100"/>
+            </svg>
+            <p><strong>9.23</strong><span>/ 10 CGPA</span></p>
+          </div>
+          <div class="edu-copy">
+            <p class="cred-kicker">Education <span class="sep">/</span> Sept 2021 – May 2025</p>
+            <h3>GITAM University, Bengaluru</h3>
+            <p>B.Tech in Computer Science and Engineering (IoT)</p>
+          </div>
+        </article>
+
+        <article class="cert tilt" data-reveal>
+          <p class="cert-issuer">Amazon Web Services</p>
+          <p class="cert-code">DVA-C02</p>
+          <h3 class="cert-name">AWS Certified Developer – Associate</h3>
+        </article>
+        <article class="cert tilt" data-reveal>
+          <p class="cert-issuer">Microsoft</p>
+          <p class="cert-code">AZ-204</p>
+          <h3 class="cert-name">Microsoft Certified: Azure Developer Associate</h3>
+        </article>
+        <article class="cert tilt" data-reveal>
+          <p class="cert-issuer">Microsoft</p>
+          <p class="cert-code">DP-700</p>
+          <h3 class="cert-name">Microsoft Certified: Fabric Data Engineer Associate</h3>
+        </article>
+      </div>
+    </section>
+
+    <!-- ───────────── Contact ───────────── -->
+    <section class="section contact" id="contact">
+      <div data-reveal>
+        <p class="eyebrow">05 <span>Contact</span></p>
+        <h2>Got a system that needs building?</h2>
+        <a class="mail" href="mailto:midhilpolisetty@gmail.com" data-contact="email">midhilpolisetty@gmail.com</a>
+        <div class="contact-actions">
+          <button class="btn primary" id="copy-email" type="button" data-email="midhilpolisetty@gmail.com">Copy email</button>
+          <a class="btn" href="https://github.com/MidhileshP" target="_blank" rel="noopener" data-contact="github">GitHub <span aria-hidden="true">↗</span></a>
+          <a class="btn" href="https://linkedin.com/in/midhilesh-p-b6894a2a4" target="_blank" rel="noopener" data-contact="linkedin">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a class="btn" href="assets/Midhilesh-Polisetty-Resume.pdf" download data-contact="resume">Résumé (PDF)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year">2026</span> Midhilesh Polisetty <span class="sep">/</span> Hyderabad, India</p>
+    <p>Plain HTML, CSS and JavaScript. No frameworks, no trackers. Press <kbd>/</kbd> for the terminal.</p>
+  </footer>
+
+  <!-- ───────────── Terminal ───────────── -->
+  <div class="term" id="terminal" role="dialog" aria-modal="true" aria-label="Terminal" hidden>
+    <div class="term-backdrop" data-close></div>
+    <div class="term-win">
+      <div class="term-head">
+        <p>midhilesh@portfolio <span>~</span></p>
+        <button class="term-close" type="button" data-close aria-label="Close terminal">close</button>
+      </div>
+      <div class="term-out" aria-live="polite"></div>
+      <div class="term-quick" role="group" aria-label="Quick commands">
+        <button type="button" data-cmd="help">help</button>
+        <button type="button" data-cmd="whoami">whoami</button>
+        <button type="button" data-cmd="work">work</button>
+        <button type="button" data-cmd="projects">projects</button>
+        <button type="button" data-cmd="skills">skills</button>
+        <button type="button" data-cmd="contact">contact</button>
+      </div>
+      <form class="term-form" autocomplete="off">
+        <label for="term-input"><span class="term-user">visitor@portfolio:~</span>$</label>
+        <input class="term-input" id="term-input" type="text" spellcheck="false" autocapitalize="off" autocorrect="off" aria-label="Command">
+      </form>
+    </div>
+  </div>
+
+  <script src="js/land.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/globe.js" defer></script>
+  <script src="js/demos.js" defer></script>
+  <script src="js/terminal.js" defer></script>
+</body>
+</html>
