@@ -60,7 +60,7 @@ body {
   transition: background-color .4s, color .4s;
 }
 body.term-open { overflow: hidden; }
-h1, h2, h3, p, ul, ol, dl, dd { margin: 0; }
+h1, h2, h3, h4, p, ul, ol, dl, dd { margin: 0; }
 ul, ol { padding: 0; list-style: none; }
 a { color: inherit; }
 button, input, textarea { font: inherit; }
@@ -173,6 +173,7 @@ kbd {
   transition: border-color .2s, gap .25s var(--ease);
 }
 .text-link:hover { border-color: var(--accent); gap: 10px; }
+.project-links { display: flex; flex-wrap: wrap; gap: 0 28px; }
 
 /* ───────────── Hero ───────────── */
 .hero {
@@ -352,6 +353,23 @@ h2 {
 .project-kicker { font: 500 12.5px/1.4 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--accent-2); margin-bottom: 12px; }
 .project h3 { font: 700 clamp(1.9rem, 3.6vw, 3rem)/1.02 var(--font-display); letter-spacing: -.035em; }
 .project-desc { margin: 18px 0 22px; color: var(--muted); }
+
+/* Repositories listed after the featured projects: same voice, no toy. */
+.more { padding-top: clamp(36px, 6vw, 72px); border-top: 1px solid var(--line); }
+.more-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 24px; margin-bottom: clamp(20px, 3vw, 32px); }
+.more-head h3 { font: 700 clamp(1.5rem, 2.6vw, 2.1rem)/1.1 var(--font-display); letter-spacing: -.03em; }
+.more-head p { color: var(--muted); }
+.more-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.repo {
+  display: flex; flex-direction: column; min-width: 0;
+  padding: clamp(20px, 2.4vw, 28px); border: 1px solid var(--line); border-radius: 22px;
+  background: linear-gradient(180deg, var(--panel), var(--bg-2)); transition: border-color .3s;
+}
+.repo:hover { border-color: var(--line-2); }
+.repo h4 { font: 700 1.35rem/1.2 var(--font-display); letter-spacing: -.02em; }
+.repo .project-desc { margin: 12px 0 20px; font-size: .97em; }
+.repo .chips { margin-top: auto; }
+.repo .text-link { align-self: flex-start; margin-top: 20px; }
 
 .toy {
   border: 1px solid var(--line); border-radius: 22px;
@@ -535,6 +553,7 @@ h2 {
 @media (max-width: 1000px) {
   .project, .project.flip { grid-template-columns: minmax(0, 1fr); }
   .project.flip .project-copy { order: 0; }
+  .more-grid { grid-template-columns: minmax(0, 1fr); }
 }
 @media (max-width: 900px) {
   .nav-links { display: none; }

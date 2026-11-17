@@ -78,12 +78,16 @@
     projects: {
       about: 'things I built',
       run() {
-        $$('.project').forEach((project) => {
-          print(`${text($('h3', project))} · ${text($('.project-kicker', project))}`, 'head');
+        // Featured projects first, then the plain repository cards under "More on GitHub".
+        $$('.project, .repo').forEach((project) => {
+          print(`${text($('h3, h4', project))} · ${text($('.project-kicker', project))}`, 'head');
           print('  ' + text($('.project-desc', project)));
           print('  stack: ' + $$('.chips li', project).map(text).join(', '), 'sys');
-          const demo = $('.text-link', project);
-          if (demo) print(['  ', link(demo.href, demo.href)]);
+          $$('.text-link', project).forEach((a) => {
+            // "Live demo ↗" → "demo", "Source ↗" → "source"
+            const label = text(a).replace(/[^a-z ]/gi, '').trim().split(' ').pop().toLowerCase();
+            print([`  ${label.padEnd(8)}`, link(a.href, a.href)]);
+          });
         });
       },
     },

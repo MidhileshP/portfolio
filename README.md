@@ -30,7 +30,10 @@ python3 -m http.server 8000
 - **Work stages**: each stage is a `pipe-node` button plus a matching `pipe-panel` article in `index.html`.
 - **Skills**: each skill is a button in the Stack section. `data-used="minfy docspace"` lists where it
   was used; the keys match the `data-filter` values on the filter buttons above the grid.
-- **Projects**: each project is an `<article class="project">`. The terminal picks up changes on its own.
+- **Projects**: each featured project is an `<article class="project">` with a toy beside it.
+- **More on GitHub**: each card is an `<article class="repo">` inside `.more-grid`, holding a kicker,
+  a heading, a description, chips and a source link. Add or remove cards freely.
+- The terminal's `projects` command reads both kinds from the page, so it stays up to date on its own.
 
 ## Deploying
 
